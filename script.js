@@ -113,7 +113,7 @@ setInterval(() => {
 
 
 //To update the value of score in display and score Element .
-function updateScore(){
+function updateScore(currentScore){
     display.innerHTML = "Score : " + currentScore;
     score.innerHTML = "Your Score : " + currentScore; 
 }
