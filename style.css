@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#bg{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('jungle.png') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+#display{
+    color: white;
+    background: #00000084;
+    position: absolute;
+    right: 2vw;
+    top: 2vh;
+    padding: 12px 40px;
+    display: none;
+}
+#restart{
+    padding:  8px 20px;
+    color: red;
+    position: absolute;
+    top: 35vh;
+    left: 22vw;
+    border-radius: 18px;
+    background: #1305d6ca;
+}
+#home{
+    padding:  8px 20px;
+    color: red;
+    position: absolute;
+    top: 43vh;
+    left: 22.5vw;
+    border-radius: 18px;
+    background: #1305d6ca;
+}
+#gameOver{
+    position: fixed;
+    width: 50%;
+    margin: 12% 25% ;
+    background: #000000ae;
+    color: white;
+    text-align: center;
+    padding:25vh ;
+    display: none;
+    z-index: 999;
+} 
+#start{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding:  8px 20px;
+    color: white;
+    position: relative;
+    top: 45vh;
+    left: 48vw;
+    border-radius: 18px;
+    background: green;
+    transition: background-color 2s;
+}
+#start:hover{
+    background: grey;
+}
+.container{
+    position: relative;
+}
+.horse{
+    position: absolute;
+    top: 63vh; 
+    z-index: 999;
+    animation: horseWalking 30s linear  infinite  ; 
+}
+.horse img{
+    width: 30vw;
+    height: 40vh;
+}
+#witch{
+    position: absolute;
+    top: 40vh; 
+    right: 80vw;
+    opacity: 0;
+    transition: opacity 3s;
+}
+#witch iframe{
+    width: 150px;
+}
+.track{
+    position: absolute;
+    bottom: 0;
+}
+.track #road{
+    width: 100vw;
+    height: 10vh;
+}
+#tree{
+    position: absolute;
+    height: 50vh;
+    right: -20vw;
+    top: 35vh;
+}
+@keyframes horseWalking {
+   0%{left: -20vw;}
+   100%{left: 90vw;} 
+}
+@keyframes treeMoving {
+    0%{right: -20vw;}
+    100%{right: 100vw;}
+}
+@keyframes witchJump {
+    0%{top: 40vh;}
+    50%{top: 10vh;}
+}
