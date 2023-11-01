@@ -33,6 +33,7 @@ start.addEventListener("click",()=>{
     isrunning = true;
     soundStart.play();
     soundGame.play();
+    alert("ArrowUP for Jump, ArrowRight and ArrowLeft for moving left and right to dino....");
 })
 
 
